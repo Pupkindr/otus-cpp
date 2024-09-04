@@ -1,9 +1,11 @@
-#include "lib.h"
-
 #include <iostream>
 
-int main(int, char **) {
-	std::cout << "Version: " << version() << std::endl;
-	std::cout << "Hello, world!" << std::endl;
-	return 0;
+#include "version.hpp"
+
+using namespace std;
+
+int main()
+{
+    cout << "Version: " << PROJECT_VERSION_PATCH << endl << "Hello, world!" << endl;
+    return 0;
 }
